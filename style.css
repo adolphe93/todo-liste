@@ -1,0 +1,90 @@
+
+.container {
+
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 200px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+} 
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 10px 8px 10px 40px;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.5s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    list-style-type: none;
+} 
+ul li:nth-child(odd) {
+    background: #f9f9f9;
+}
+ul li:hover {
+    background: #ddd;
+}
+ul li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+.header {
+    background-color: yellowgreen;
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+img {
+    width: 15px;
+    height: 15px;
+}
+
+.addbtn {
+    background: #d9d9d9;
+    color: #555;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.addbtn:hover {
+    background-color: #bbb;
+}
+ul li:nth-child(odd) {
+    background: #f9f9f9;
+}
+.com1 {
+    margin-left: 190px;
+}
+.com2 {
+    margin-left: 175px;
+}
+.com3 {
+    margin-left: 154px;
+}
+.com4 {
+    margin-left: 171px;
+}
+.com5 {
+    margin-left: 175px;
+}
+button {
+    cursor: pointer;
+}
+.moc {
+    background-color: red;
+    padding: 10px 20px;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+
