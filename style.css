@@ -1,4 +1,6 @@
-
+/*body {
+    background:#bbb ;
+}
 .container {
 
     margin-left: 300px;
@@ -27,7 +29,8 @@ ul li:nth-child(odd) {
     background: #f9f9f9;
 }
 ul li:hover {
-    background: #ddd;
+  transform: scale(1.8);
+  border-radius: 10px; 
 }
 ul li.checked {
     background: #888;
@@ -36,7 +39,7 @@ ul li.checked {
 }
 
 .header {
-    background-color: yellowgreen;
+    background-color: rgba(73, 97, 26, 0.547);
     padding: 30px 40px;
     color: white;
     text-align: center;
@@ -60,31 +63,156 @@ img {
 ul li:nth-child(odd) {
     background: #f9f9f9;
 }
-.com1 {
+.li1 {
     margin-left: 190px;
 }
-.com2 {
+.li2 {
     margin-left: 175px;
 }
-.com3 {
+.li3 {
     margin-left: 154px;
 }
-.com4 {
+.li4 {
     margin-left: 171px;
 }
-.com5 {
+.li5 {
     margin-left: 175px;
 }
-button {
+span {
     cursor: pointer;
 }
-.moc {
-    background-color: red;
+.btn {
+    background-color: rgba(63, 109, 80, 0.386);
     padding: 10px 20px;
     color: white;
     text-align: center;
     border-radius: 10px;
 }
+*/
 
 
 
+/* animation du haut vers le bas
+button {
+    overflow: hidden;
+    width: 200px;
+    height: 60px;
+    background: chartreuse;
+    border-radius: 0.2rem;
+    padding:0;
+}
+span {
+    align-items:center;
+    justify-content: center;
+    transition: 1s;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+}
+.aller {
+    background: green;
+}
+.retour {
+    background: red;
+}
+button:hover span{
+    transform:translateX(-100%);
+} 
+*/
+  
+
+
+
+/*anime2
+div {
+    width: 200px;
+    height: 200px;
+    background: chartreuse;
+    animation: anime1 10s 0s ease-in-out 
+    
+}
+@keyframes anime1 {
+    25%{
+        transform: translate(100%) rotate(1800deg) ;
+        border-radius: 1rem;
+        background: blue;
+    }
+    50%{
+        transform: translate(100%,100%);
+        border-radius: 2rem;
+        background: white;
+    }
+    75%{
+        transform: translateY(100%) rotate(1800deg);
+        border-radius: 3rem;
+        background: red;
+    }
+    100%{
+        transform: translate(0%);
+        border-radius: 4rem;
+        background: black;
+    }
+}
+*/
+
+p {
+    font-size: 3rem;
+    font-weight: bolder;
+    overflow: hidden;
+    margin-top: 100%;
+    animation: anime1 2s 0s forwards ease-in-out;
+   
+}
+div {
+    border-bottom: 5px solid black;
+    width: 500px;
+    height: 105px;
+    overflow: hidden;
+    position:relative;
+}
+span  {
+    position: absolute;
+    background: white;
+}
+.span1 {
+    z-index: 1;
+}
+.span2 {
+    left: -100%;
+    z-index:0;
+    animation:anime2 2s 2s forwards ease-in-out;
+}
+@keyframes anime1 {
+    /*from{
+        margin-top: 40%;
+    }
+    to {
+        margin-top: 5%;
+    }
+    */
+    0% {
+        margin-top: 3%;
+    }
+    75% {
+        margin-top: 30%;
+    }
+
+}
+
+@keyframes anime2 {
+    /*from{
+        left: -100%;
+    }
+    to {
+        left: 7.5%;
+    }*/
+    from {
+        left: -100%;
+    }
+    to {
+        left: 7.5%;
+    }
+}
